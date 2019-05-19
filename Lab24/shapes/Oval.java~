@@ -1,0 +1,24 @@
+/* Oval.java
+ * Lab 24 COMP160 2016
+ * 
+ * Grace Park
+ * 
+ * drawing oval
+ */
+
+package shapes;
+import java.awt.*;
+
+public class Oval extends Shape{
+  public Oval(){
+    height = 4*width;
+    y = randomRange(0, (400-height));
+  }
+  
+    /**draws a oval with a given input*/
+  public void display(Graphics g){
+    g.setColor(shapeColor);
+    g.fillOval(x,y,width,height);
+  }
+}
+  

@@ -1,0 +1,20 @@
+/* Square.java
+ * Lab 24 COMP160
+ * 
+ * Grace Park
+ */
+
+package shapes;
+import java.awt.*;
+
+public class Square extends Shape{
+  public Square(){
+    height = width;
+  }
+  
+      /**draws a square with a given input*/
+  public void display(Graphics g){
+    g.setColor(shapeColor);
+    g.fillRect(x,y,width,height);
+  }
+}

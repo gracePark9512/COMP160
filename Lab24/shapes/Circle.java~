@@ -1,0 +1,20 @@
+/** Circle.java
+  * 
+  * Lab 24 COMP160
+  * 
+  * Grace Park
+  * 
+  * drawing circle
+  */
+
+package shapes;
+import java.awt.*;
+
+public class Circle extends Shape{
+    /**draws a circle with a given input*/
+  public void display(Graphics g){
+    g.setColor(shapeColor);
+    g.fillOval(x,y,width,height);
+  }
+}
+  
