@@ -1,0 +1,26 @@
+public class ShapePanel extends JPanel{
+  private Shape [] shapes;
+  private DrawingPanel drawPanel;
+  private JPane controlPanel;
+  private JButton addShape = "Add Shape" ;
+  private JTextField shownum;
+  private JLabel countLabel = "Count" ;
+  private int count;
+  
+  public ShapePanel(){
+  }//ShapePanel end
+  
+  public static void main(String [] args){ 
+  }//main end
+  
+  public class DrawingPanel extends JPanel{
+    public DrawingPanel(){
+    }//Drawing Panel end
+  }//DrawingPanel class end 
+  
+  public ButtonListener implements ActionListener{
+    public void actiontionPerformed (ActionEvent e){
+    }//actionPerformed end 
+  }//end ButtonListener
+  
+}//class end

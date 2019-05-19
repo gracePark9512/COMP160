@@ -1,0 +1,15 @@
+public class Shape{
+private int x;
+private int y;
+private int width;
+private int height;
+private Color color;
+
+public Shape(){
+}//shape end
+
+public int randomRange(int lo, int hi){
+}//randomRange end
+
+public void display(Graphics g){
+}//class end

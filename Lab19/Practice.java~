@@ -1,0 +1,7 @@
+import Scanner.awt*;
+public class Practice{
+  public static void main (String [] args){
+    System.out.println("Enter a integer");
+    Scanner scan = new Scanner (System.in);
+    int newInt = scan.nextInt();
+  }
