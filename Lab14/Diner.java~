@@ -1,0 +1,32 @@
+/** Diner.java
+  * Grace Park COMP160 2016
+  * 
+  * Lab 14
+  * 
+  * make a table plan
+  */
+
+import java.awt.*;
+
+public class Diner{
+  private int x;
+  private int y;
+  private String name;
+  private int seatNum;
+  private Color color;
+  private static final int DIAMETER = 50;
+  
+  public Diner (int x, int y, String name, int seatNum, Color color){
+    this.x = x;
+    this.y = y;
+    this.name = name;
+    this.seatNum = seatNum;
+    this.color = color;
+  }//diner end 
+  
+  public void draw (Graphics g){
+    g.setColor (color)
+  }//draw end 
+  
+  
+}//class end 

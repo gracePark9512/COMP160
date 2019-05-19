@@ -1,0 +1,29 @@
+/** IntCounterApp.java
+  * 
+  * Grace Park
+  * 
+  * COMP160 Lab15 2016
+  * 
+  * input for IntCounter.java
+  */
+
+public class IntCounterApp{
+  
+  public static void main (String [] args){
+    Scanner scan = new Scanner(System.in);
+    System.println
+    
+  }//main end 
+  
+  public int [] makeArray(){
+    int [] makeArray = new int[10];
+    for (int i=0; i<=10; i++){
+      int n = (int)(Math.random());
+      makeArray[i]=n;
+      return makeArray[]
+    }
+    
+    
+  }//makeArray end 
+  
+}//class end

@@ -1,0 +1,16 @@
+import java.text.NumberFormat;
+/**
+ * BoxApp.java
+ * 
+ * Lab 7 COMP 160 2016
+ * Grace Park
+ * 
+ * put values into box.java
+ */
+
+public class BoxApp{
+  //class start
+  public static void main (String [] args){
+    
+    Box b1 = new Box();
+    b1.setHeight()

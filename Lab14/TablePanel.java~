@@ -1,0 +1,22 @@
+/** TablePanel.java
+  * 
+  * Grace Park
+  * 
+  * COMP 160 2016 Lab 14
+  * 
+  * show tabel plan
+  */
+import javax.swing.JFrame;
+
+public class TablePanel extends Jpanel{
+
+   private Diner diner1, diner2, diner3, diner4, diner5, diner6;
+     
+    public TablePanel(){
+    }//TablePanel end 
+    
+    public void paintComponent(Graphics g){
+    }//paintComponent end 
+  
+  }//main end 
+}//class end 

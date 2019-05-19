@@ -1,0 +1,30 @@
+/** IntCounter.java
+  * 
+  * Grace Park 
+  * 
+  * COMP160 2016 Lab 15
+  * 
+  * display the array position if every occurence of a target integer
+  * that is stored in an array of int
+  */
+
+public class IntCounter{
+  private int [] numArray;
+  
+  public IntCounter (int [] numArray){
+    this.numArray = numArray;
+    for (int showTarget: numArray){
+      System.out.println (showTarget);
+    }//foreach end 
+    
+  }//IntCounter end 
+  
+  public void showTarget (int target){
+    for (int i=0; i<numArray.length; i++){
+      System.out.println (numArray[i]);
+    }//for end 
+
+  }//showTarget end 
+  
+  
+}//end class 

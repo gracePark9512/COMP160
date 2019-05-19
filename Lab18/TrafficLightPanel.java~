@@ -1,0 +1,83 @@
+/**TrafficLightPanel.java
+  * 
+  * Grace Park Lab18 2016
+  * 
+  * interact with buttons 
+  */
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class TrafficLightPanel extends JPanel{
+  private JButton red;
+  private JButton green;
+  private JButton amber;
+  private JLabel buttonLabel;
+  private JLabel lastPressed;
+  private JPanel buttonPanel;
+  
+  public static void main (String [] args){
+    JFrame frame = new JFrame("Traffic Lights");
+    JPanel panel = new JPanel();
+    frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
+    
+    frame.getContentPane().add(new TrafficLightPanel ());
+    
+    frame.pack();
+    frame.setVisible(true);
+  }//main end 
+  
+  public TrafficLightPanel(){
+    setPreferredSize (new Dimension (200, 300));
+    setBackground(Color.blue);
+    
+    
+    red = new JButton("Red");
+    amber = new JButton("Amber");
+    green = new JButton("Green");
+    
+    
+    buttonLabel = new JLabel("Button Panel");
+    lastPressed = new JLabel("last Pressed");
+    
+    buttonPanel = new JPanel();
+    buttonPanel.setPreferredSize(new Dimension (80, 290));
+    buttonPanel.setBackground(Color.white);
+    
+    buttonPanel.add(buttonLabel);
+    buttonPanel.add(red);
+    buttonPanel.add(amber);
+    buttonPanel.add(green);
+    buttonPanel.add(lastPressed);
+    
+    add(buttonPanel);
+    
+  }//end TraafficLightPanel
+  private class ButtonListener implements ActionListener{
+    
+    public void actionPerformed(ActionEvent a){
+      Color color;
+      if (a.getSource()== red){
+        buttonPanel.add(red);
+        color = Color.red;
+      }
+      else if (a.getSource()==amber){
+        buttonPanel.add(amber);
+        color = Color.orange;
+      }
+      else if (a.getSource() ==green){
+        buttonPanel.add(green);
+        color = Color.green;
+      }
+      setBackground(color);
+      
+      
+    }//actionPerformed end
+  }//ButtonListner end
+  
+  private class LightPanel extends JPanel{
+    public void paintComponent(Graphics g){
+    }//paintComponent end
+  }//LightPanel end 
+  
+}//end class

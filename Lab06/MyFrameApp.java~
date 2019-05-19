@@ -1,0 +1,18 @@
+import javax.swing.*;
+import java.awt.*;
+/** 
+ * Lab 6 Part 1 Q 5, COMP 160
+ * MyFrameApp
+ * object practices
+ */
+public class MyFrameApp{
+  //Start main 
+  public static void main(String [] args){ 
+    MyFrame m1 = new MyFrame();
+    m1.setSize(300, 150);
+    m1.setVisible(true);
+    MyFrame m2 = new MyFrame();
+    m2.setSize(300, 150);
+    m2.setVisible(true);
+  }
+}

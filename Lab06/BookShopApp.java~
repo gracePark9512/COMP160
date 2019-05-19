@@ -1,0 +1,17 @@
+import java.text.NumberFormat;
+/**
+ * Lab 6 Part 2, COMP 160
+ * Grace Park 
+ * 
+ * BookShopApp
+ * Object Practices
+ */
+
+public class BookShopApp{
+  //class start
+  public static void main (String [] args){
+    Book b1 = new Book();
+    b1.setsize(300, 150);
+    b1.setvisible(true);
+  }
+}
